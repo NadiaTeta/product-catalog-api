@@ -57,7 +57,7 @@ GET	    /api/categories	    Retrieve all categories
 POST	  /api/categories	    Create a new category
 DELETE	/api/categories/:id	Delete a category by ID
 ```
-Get All Categories GET /categories
+Get All Categories: GET /categories
 ```sh
 [
   {
@@ -92,11 +92,11 @@ Get Single Category
 ```sh
 GET /categories/:id
 ```
-Update Category PUT /categories/:id
+Update Category: PUT /categories/:id
 ```sh
 { "name": "Home Appliances" }
 ```
-Delete category 
+Delete category:
 ```sh
 DELETE /categories/:id
 ```
@@ -110,7 +110,7 @@ GET	    /api/products/:id	Get product by ID
 PUT	    /api/products/:id	Update product by ID
 DELETE	/api/products/:id	Delete product by ID
 ```
-Get all products GET /products
+Get all products: GET /products
 Response 
 ```sh
 [
@@ -168,7 +168,7 @@ Example Response
 }
 
 ```
-Get product by ID GET /products/:id
+Get product by ID: GET /products/:id
 Response
 ```sh
 {
@@ -181,16 +181,16 @@ Response
 }
 ```
 
-Update Product PUT /products/:id
+Update Product: PUT /products/:id
 ```sh
 { "price": 999 }
 ```
-Delete Product DELETE /products/:id
+Delete Product: DELETE /products/:id
 Response: 204 No content
 
 ### Status Codes
 
-Code	Description
+Code	Description:
 ```sh
 200	OK
 201	Created
