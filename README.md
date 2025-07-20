@@ -57,16 +57,18 @@ POST	  /api/categories	    Create a new category
 DELETE	/api/categories/:id	Delete a category by ID
 
 Example Request: POST /api/categories
-
+```sh
 {
   "name": "Electronics"
 }
+```
 Example Response
-
+```sh
 {
   "_id": "64b99e372be68938f9d5e1b5",
   "name": "Electronics"
 }
+```
 ### Products Endpoints
 Method	Endpoint	Description
 
@@ -110,13 +112,14 @@ Example Response
 ### Status Codes
 
 Code	Description
-
+```sh
 200	OK
 201	Created
 204	No Content (Deleted)
 400	Bad Request
 404	Not Found
 500	Internal Server Error
+```
 
 ## Assumptions & Limitations
 Category names must be unique (validation not enforced in DB unless indexed).
@@ -127,7 +130,7 @@ No authentication or authorization implemented.
 
 Inventory management is basic and does not support transactional safety for large-scale concurrency.
 
-📬 Contribution
+## Contribution
 Feel free to fork and submit pull requests for enhancements like:
 
 Advanced filtering, sorting, pagination
