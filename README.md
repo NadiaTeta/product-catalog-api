@@ -52,9 +52,11 @@ http://localhost:5000/api-docs
 ### Categories Endpoints
 
 Method	Endpoint	Description
+```sh
 GET	    /api/categories	    Retrieve all categories
 POST	  /api/categories	    Create a new category
 DELETE	/api/categories/:id	Delete a category by ID
+```
 
 Example Request: POST /api/categories
 ```sh
@@ -71,13 +73,13 @@ Example Response
 ```
 ### Products Endpoints
 Method	Endpoint	Description
-
+```sh
 GET	    /api/products	    Get all products
 POST	  /api/products	    Create new product
 GET	    /api/products/:id	Get product by ID
 PUT	    /api/products/:id	Update product by ID
 DELETE	/api/products/:id	Delete product by ID
-
+```
 Example Request: POST /api/products
 ```sh
 {
