@@ -23,18 +23,18 @@ A RESTful API built using **Node.js**, **Express**, and **MongoDB (via Mongoose)
 
 ### Clone the Repository
 
-```bash
-git clone https://github.com/yourusername/product-catalog-api.git
-cd product-catalog-api
-Install Dependencies
 
+git clone https://https://github.com/NadiaTeta/product-catalog-api.git
+cd product-catalog-api
+
+Install Dependencies
 npm install
 
 Set Up Environment Variables
 Create a .env file and add your MongoDB connection string:
 
 MONGODB_URI=mongodb://localhost:27017/product_catalog
-PORT=3000
+PORT=5000
 
 Start the Server
 npm run dev
@@ -45,34 +45,30 @@ http://localhost:5000/api-docs
 
 Categories Endpoints
 Method	Endpoint	Description
-GET	/api/categories	Retrieve all categories
-POST	/api/categories	Create a new category
+GET	    /api/categories	    Retrieve all categories
+POST	  /api/categories	    Create a new category
 DELETE	/api/categories/:id	Delete a category by ID
 
 Example Request: POST /api/categories
-json
-Copy code
+
 {
   "name": "Electronics"
 }
 Example Response
-json
-Copy code
+
 {
   "_id": "64b99e372be68938f9d5e1b5",
   "name": "Electronics"
 }
 Products
 Method	Endpoint	Description
-GET	/api/products	Get all products
-POST	/api/products	Create new product
-GET	/api/products/:id	Get product by ID
-PUT	/api/products/:id	Update product by ID
+GET	    /api/products	    Get all products
+POST	  /api/products	    Create new product
+GET	    /api/products/:id	Get product by ID
+PUT	    /api/products/:id	Update product by ID
 DELETE	/api/products/:id	Delete product by ID
 
 Example Request: POST /api/products
-json
-Copy code
 {
   "name": "iPhone 13",
   "price": 1099,
@@ -86,8 +82,7 @@ Copy code
   ]
 }
 Example Response
-json
-Copy code
+
 {
   "_id": "64b99e372be68938f9d5e1b7",
   "name": "iPhone 13",
@@ -122,13 +117,8 @@ Inventory management is basic and does not support transactional safety for larg
 📬 Contribution
 Feel free to fork and submit pull requests for enhancements like:
 
-Authentication (JWT)
-
-Category-product relational modeling
-
 Advanced filtering, sorting, pagination
 
-Image uploads for products
 
 📄 License
 This project is open-source and licensed under the MIT License.
