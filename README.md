@@ -101,7 +101,11 @@ Example Response
   "_id": "64b99e372be68938f9d5e1b7",
   "name": "iPhone 13",
   "price": 1099,
-  "category": "Electronics",
+  "category": {
+    "_id": "64b89d3e1c2a4781a7e8d8e1",
+    "name": "Electronics",
+    "__v": 0
+  },
   "instock": true,
   "discount": 10,
   "inventory": 50,
@@ -110,6 +114,7 @@ Example Response
     { "color": "Blue", "size": "256GB" }
   ]
 }
+
 ```
 ### Status Codes
 
